@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXQE608B0C"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QXQE608B0C');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nikan Ostovan">
+    <meta name="description" content="resume website">
+
+    <title>CV website for Nikan Ostovan</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+
+    <style>  
+        body {
+        font-family: 'Lato', sans-serif;
+        }
+     </style>  
+</head>
+
+<body id = 'hero'>
+    <header>
+
+        <h1>Nikan's resume Website</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/resume.html">Resume</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/experiments.html">Experimental Features</a></li>
+                <li><a href="/methodtest.html">Method Test page</a></li>
+                <li><a href="/webcomponent.html">webcomponent</a></li>
+            </ul>
+        </nav>
+        <button id = "HBmenu" onclick="alert('js for HBmenu not written yet')"></button>
+    </header>
+
+    <main>
+        <section id="contactsection">
+            <h2 id="contact">Contact me</h2>
+                <form action="contactList.php" method="get" id="contactform">
+                    <fieldset>
+                        <legend>Contact form:</legend>
+                        <label for="Name">Name:</label>
+                        <input type="text" id="Name" name="Name"><br><br>
+
+                        <label for="Company">Company:</label>
+                        <input type="text" id="Company" name="Compnay"><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+
+                        <label for="purpose">Purpose:</label>
+                        <input list="Purpose" id="purpose" name="purpose"><br><br>
+
+                        <datalist id="Purpose">
+                            <option value="Job">
+                            <option value="Research">
+                        </datalist>
+
+                        <label for="How">How did you hear about me:</label>
+                        <select name="How" id="How" form="contactform">
+                            <optgroup label="Socials"> 
+                                <option value="linkedin">Linkedin</option>
+                                <option value="github">Github</option>
+                            </optgroup>
+                            <optgroup label="others"> 
+                                <option value="recruiter">Recruiter</option>
+                            </optgroup>
+                        </select>
+                        <br><br>
+
+                        <label for="adcomms">Aditional comments:</label>
+                        <textarea id="adcomms" name="adcomms">For additinal comments</textarea><br><br>
+                        
+                        <button type="submit" form="contactform">Submit</button>
+                    </fieldset>
+                </form>
+        </section>
+        <hr>
+    </main>
+
+    <footer>
+        <p>Author: Nikan Ostovan<br>
+        E-mail:<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">nostovan@ucsd.edu</a></p>
+    </footer>
+
+</body>
+</html>

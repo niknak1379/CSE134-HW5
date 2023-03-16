@@ -1,0 +1,160 @@
+:root{
+  --light-blue: #41B3A3;
+  --purple: #C38D9E;
+  --brown: #E27D60;
+  --pink: #F64C72;
+  --dark-purple: #553D67;
+  --dark-blue: #05386B;
+  --green: #5cdb95;
+  --light-green: #edf5e1;
+}
+
+h1{
+    font-size: 2rem;
+    background-color: var(--dark-blue);
+    color: var(--purple);
+    text-align: center;
+    transition: font-size 2s, background-color 1s;
+    border-radius: 12px;
+}
+nav {
+  background-color: var(--light-blue);
+  color: var(--dark-purple);
+  border-radius: 12px;
+
+}
+#contactsection{
+  color: var(--purple);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav li{
+  border-radius: 5px;
+  background-color: var(--green);
+  padding:5px;
+}
+
+
+body{
+  background-color: var(--purple);
+}
+header {
+  grid-area: header;
+}
+main{
+  grid-area: body;
+  display:flex;
+  flex-direction: column;
+}
+
+footer{
+  background-color: var(--green);
+  grid-area: footer;
+  color: var(--pink);
+  border-radius: 8px;
+}
+section ol, section ul,  section table{
+  background-color: darkgrey;
+  border-radius: 8px;
+  border-style:dashed;
+  border-color:crimson;
+  transition: font-size 2s;
+}
+
+h2{
+  font-size: 2em;
+}
+#hero{
+  background-image: url('nikan.jpg');
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+#resume{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content: center;
+}
+
+#resbox{
+  flex-grow: 1;
+  text-align: center;
+}
+
+#pic{
+  display:flex;
+  justify-content: right;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (min-width: 320px){
+  nav {
+    display: none;
+  }
+  #dude{
+    display: none;
+  }
+  #HBmenu{
+    visibility: visible;
+    width: 50px;
+    height: 40px;
+    background-image: url('menu-burger.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (min-width: 500px){
+  nav{
+    display: block;
+  }
+  #dude{
+    display: block;
+  }
+  #HBmenu{
+    visibility:hidden;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  h1:hover{
+    font-size: 3rem;
+    background-color: darkslategrey;
+  }
+  #resbox{
+    animation: 0.7s rotate;
+  }
+}
+@media (min-width: 768px){
+  #resHero{
+    background-image: url('squat.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--pink);
+  }
+  section ol, section ul,  section table{
+    background-color: var(--dark-blue);
+    border-radius: 8px;
+    color: var(--pink);
+    transition: font-size 2s;
+  }
+}
+
+
